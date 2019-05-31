@@ -22,6 +22,26 @@
    for(var i = 0; i < list.children.length; i++) {
     list.children[i].onclick = removeItem;
    }
+   function newList() {
+    <body>
+ <div class="header">
+  <img src="file.jpeg" style="float: left;"> 
+  <p>List</p>
+ </div>
+ <div class="app">
+  <p style="font-size:18px; font-style:bold;">To-Do List</p>
+  <input type="text" id="box" value="Type here to add task"/>
+  <br/>
+  <input type="button" value="Add item" onclick="addItem();"/>
+  <br/>
+   <div id="list"></div>
+ </div>
+ <script>
+  if(localStorage.storedList)
+   loadList();
+ </script>
+</body>
+   }
   }
  </script>
  <style>
