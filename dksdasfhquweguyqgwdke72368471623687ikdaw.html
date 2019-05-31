@@ -66,8 +66,10 @@
   <input type="button" value="Delete List" onclick="removeList();"/>
   <br/>
    <div id="list"></div>
-  if(localStorage.box)
-   loadList();
  </div>
+ <script>
+  if(localStorage.storedList)
+   loadList();
+ </script>
 </body>
 </html>
