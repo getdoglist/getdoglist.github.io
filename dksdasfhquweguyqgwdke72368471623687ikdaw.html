@@ -22,6 +22,10 @@
    for(var i = 0; i < list.children.length; i++) {
     list.children[i].onclick = removeItem;
    }
+   function removeList() 
+   document.getElementById("list").removeChild;
+   savelist();
+   }
   }
  </script>
  <style>
@@ -59,7 +63,7 @@
   <br/>
   <input type="button" value="Add item" onclick="addItem();"/>
   <br/>
-  <input type="button" value="Delete List" onclick="removeItem();"/>
+  <input type="button" value="Delete List" onclick="removeList();"/>
   <br/>
    <div id="list"></div>
  </div>
