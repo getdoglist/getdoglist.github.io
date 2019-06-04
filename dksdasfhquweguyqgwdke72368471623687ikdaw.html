@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
- <title>To-Do List</title>
+ <title>To-Do List App</title>
  <script>
   function addItem() {
    var newItem = document.createElement("div");
@@ -32,7 +32,7 @@
     float: center; 
     padding:10px; 
     margin:20px;
-    text-align: center; 
+    text-align:centre; 
     font-size:24px;
   }
   .app {
@@ -50,8 +50,8 @@
 </head>
 <body>
  <div class="header">
-  <img src="file.jpeg" style="float: left;"> 
-  <p>List</p>
+  <img src="volkovlogo.png" style="float: left;"> 
+  <p>The House of Volkov</p>
  </div>
  <div class="app">
   <p style="font-size:18px; font-style:bold;">To-Do List</p>
@@ -62,8 +62,9 @@
    <div id="list"></div>
  </div>
  <script>
-  if(localStorage.storedList)
+  if(localStorage.storedList) {
    loadList();
+  }
  </script>
 </body>
 </html>
